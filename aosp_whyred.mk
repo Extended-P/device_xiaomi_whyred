@@ -22,8 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
-# Inherit from custom vendor
+# Inherit camera apps
 $(call inherit-product, vendor/MiuiCamera/config.mk)
+$(call inherit-product, vendor/xiaomi/Gcam/config.mk)
 
 # Inherit some common PixelExperience stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
