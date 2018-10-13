@@ -174,8 +174,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #Expose aux camera for below packages
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.is_type=4 \
+    persist.camera.is_mode=4 \
+    persist.camera.HAL3.enabled=1 \
+    vendor.camera.aux.packagelist2=com.android.systemui \
+    camera.hal1.packagelist=com.whatsapp,com.snapchat.android,com.instagram.android,com.google.android.talk \
     camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi
+    vendor.camera.aux.packagelist=com.google.android.GoogleCameraWide,com.android.camera 
 
 #disable UBWC for camera
 PRODUCT_PROPERTY_OVERRIDES += \
