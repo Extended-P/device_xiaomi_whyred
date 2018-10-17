@@ -1169,3 +1169,4 @@
     <VideoDecoderCap name="wmv" enabled="false"/>
     <AudioDecoderCap name="wma" enabled="false"/>
 </MediaSettings>
+
